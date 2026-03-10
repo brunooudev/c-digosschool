@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Botão de mensagem</title>
+        <link rel="Bruno - front-end II" href="ex1estilo.css">
+    </head>
+    <body>
+        <input id="nome" placeholder="Digite seu nome">
+        <button onclick="responder()">Enviar</button>
+
+        <p id="mensagem"></p>
+    </body>
+    
+
+<script>
+function responder() {
+    let nome = document.getElementById("nome").value;
+    document.getElementById("mensagem").innerText = "Olha o que eu sei fazer " + nome + "HEHE (•‿•)";
+}
+</script>
+</html>

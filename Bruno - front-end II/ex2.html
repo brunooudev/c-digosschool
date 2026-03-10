@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alguma coisa aí</title>
+        <link rel="Bruno - front-end II" href="ex1estilo.css">
+    </head>
+    <body>
+         <h1>Coloque a sua nota para vermos se vai passar do terceirão</h1>
+         <p>Digitar a sua nota por favor</p>
+         <p>Se vc não digitar não posso fazer nada por você</p>
+         <h3>boa sorte</h3>
+        <input type="number" id="nota" placeholder="Digite sua nota">
+        <button onclick="verificar()">Verificar</button>
+
+        <p id="resultado"></p>
+       
+        
+    </body>
+    <script>
+        
+function verificar() {
+    let nota = document.getElementById("nota").value;
+
+    if (nota >= 70) {
+        document.getElementById("resultado").innerText = "Aprovado";
+    } else {
+        document.getElementById("resultado").innerText = "Reprovado";
+    }
+}
+    </script>
+</html>
