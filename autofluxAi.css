@@ -1,0 +1,159 @@
+/* Reset básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo */
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* Cabeçalho */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+}
+
+header h1{
+    color:#4fc3f7;
+}
+
+/* Menu */
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#4fc3f7;
+}
+
+/* Layout principal */
+main{
+    padding:40px;
+}
+
+/* Seções */
+section{
+    display:inline-block;
+    width:250px;
+    margin:15px;
+}
+
+/* Cards */
+card{
+    display:block;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.5);
+}
+
+card h2{
+    color:#4fc3f7;
+    margin-bottom:10px;
+}
+
+/* Formulário login */
+form{
+    margin-top:40px;
+    max-width:300px;
+}
+
+form input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    background:#e3f2fd;
+    font-size:14px;
+    transition:0.3s;
+}
+
+form input:focus{
+    background:white;
+    box-shadow:0 0 8px #42a5f5;
+}
+
+/* Botão */
+form button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(135deg,#1e88e5,#42a5f5);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    transform:scale(1.05);
+    background:linear-gradient(135deg,#1565c0,#1e88e5);
+}
+
+/* Artigo */
+article{
+    margin-top:40px;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:10px;
+}
+
+article h2{
+    color:#4fc3f7;
+    margin-bottom:10px;
+}
+
+/* Aside */
+aside{
+    margin-top:30px;
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:10px;
+}
+
+aside h3{
+    color:#4fc3f7;
+    margin-bottom:10px;
+}
+
+/* Rodapé */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:rgba(0,0,0,0.3);
+    font-size:14px;
+}
+
+body.dark{
+    background: #0b0b0b;
+    color: #f1f1f1;
+}
